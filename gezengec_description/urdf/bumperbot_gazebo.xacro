@@ -44,6 +44,7 @@
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
       <legacyModeNS>true</legacyModeNS>
+    </plugin>
   </gazebo>
 
   <gazebo>
@@ -55,6 +56,7 @@
       <serviceName>imu_service</serviceName>
       <gaussianNoise>0.001</gaussianNoise>
       <updateRate>1000</updateRate>
+    </plugin>
   </gazebo>
   
 

@@ -156,18 +156,18 @@
       <mass value="0.000528415362211671" />
       <inertia ixx="1.46176048428261E-08" ixy="1.40015117949421E-10" ixz="-1.99633872937403E-12"
                 iyy="8.59662482954888E-09" iyz="7.52375112767959E-12"
-                izz="2.30279421279312E-08" />
-    </interial>
+                izz="2.30279421279312E-08"/>
+    </inertial>
     <visual>
       <origin xyz="0 0 0" rpy= "0 0 0"/> 
       <geometry>
-        <mesh filename="package://gezengec_description/meshes/imu_link.STL">  
+        <mesh filename="package://gezengec_description/meshes/imu_link.STL"/>  
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy= "0 0 0"/> 
       <geometry>
-        <mesh filename="package://gezengec_description/meshes/imu_link.STL">  
+        <mesh filename="package://gezengec_description/meshes/imu_link.STL"/>  
       </geometry>
     </collision>
   </link>
