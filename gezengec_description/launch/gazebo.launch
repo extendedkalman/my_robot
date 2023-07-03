@@ -1,5 +1,5 @@
 <launch>
-  <arg name="model" default="$(find gezengec_description)/urdf/bumperbot.urdf.xacro"/>
+  <arg name="model" default="/home/yalin/workspace/src/my_robot/gezengec_description/urdf/bumperbot.urdf.xacro"/>
   <arg name="world" default="empty_world"/>
 
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg model)" />

@@ -1,5 +1,5 @@
 <package format="2">
-  <name>robot_description</name>
+  <name>gezengec_description</name>
   <version>0.0.0</version>
   <description>
     <p>URDF Description package for bumperbot_description</p>
