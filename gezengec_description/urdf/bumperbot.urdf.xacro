@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <robot name="bumperbot" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find bumperbot_description)/urdf/bumperbot_gazebo.xacro"/>
+  <xacro:include filename="$(find gezengec_description)/urdf/bumperbot_gazebo.xacro"/>
 
   <link name="base_footprint"/>
   
@@ -16,13 +16,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/base_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/base_link.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/base_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -44,7 +44,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="1.57 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/wheel_right_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/wheel_right_link.STL" />
       </geometry>
     </visual>
     <collision>
@@ -74,7 +74,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="-1.57 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/wheel_left_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/wheel_left_link.STL" />
       </geometry>
     </visual>
     <collision>
@@ -103,7 +103,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/caster_front_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/caster_front_link.STL" />
       </geometry>
     </visual>
     <collision>
@@ -132,7 +132,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/caster_rear_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/caster_rear_link.STL" />
       </geometry>
     </visual>
     <collision>
@@ -161,13 +161,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/imu_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/imu_link.STL" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://bumperbot_description/meshes/imu_link.STL" />
+        <mesh filename="package://gezengec_description/meshes/imu_link.STL" />
       </geometry>
     </collision>
   </link>
