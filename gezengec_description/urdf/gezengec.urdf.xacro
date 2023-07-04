@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<robot name="bumperbot" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find gezengec_description)/urdf/bumperbot_gazebo.xacro"/>
+<robot name="gezengec" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find gezengec_description)/urdf/gezengec_gazebo.xacro"/>
 
   <link name="base_footprint"/>
   
@@ -26,6 +26,10 @@
       </geometry>
     </collision>
   </link>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
 
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint"/>
@@ -54,6 +58,10 @@
       </geometry>
     </collision>
   </link>
+
+  <gazebo reference="wheel_right_link">
+    <material>Gazebo/Gray</material>
+  </gazebo>
 
   <joint name="wheel_right_joint" type="continuous">
     <origin xyz="0 -0.0701101849418637 0" rpy="0 0 0" />
@@ -84,6 +92,10 @@
       </geometry>
     </collision>
   </link>
+
+  <gazebo reference="wheel_left_link">
+    <material>Gazebo/Gray</material>
+  </gazebo>
 
   <joint name="wheel_left_joint" type="continuous">
     <origin xyz="0 0.0701101849418642 0" rpy="0 0 0" />

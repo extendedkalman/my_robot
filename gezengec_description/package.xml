@@ -2,7 +2,7 @@
   <name>gezengec_description</name>
   <version>0.0.0</version>
   <description>
-    <p>URDF Description package for bumperbot_description</p>
+    <p>URDF Description package for gezengec_description</p>
     <p>This package contains configuration data, 3D models and launch files
 for bumperbot_description robot</p>
   </description>

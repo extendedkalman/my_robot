@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot name="bumperbot" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="gezengec" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <transmission name="wheel_right_transmission">
     <type>transmission_interface/SimpleTransmission</type>

@@ -4,7 +4,7 @@
       <arg name="use_python"        default="false"/>
       <arg name="py_suffix"         value=".py"       if="$(arg use_python)"/>
       <arg name="py_suffix"         value=""          unless="$(arg use_python)"/>
-      <arg name="is_simple"         default="true"/>
+      <arg name="is_simple"         default="false"/>
 
       <rosparam file="$(find joint_state_controller)/joint_state_controller.yaml" command="load"/>
 
@@ -34,7 +34,7 @@
 
             <!-- Launch the controller manager with the wheel controller -->
             <node name="controller_manager" pkg="controller_manager" type="spawner"
-                  respawn="false" output="screen" args="joint_state_controller gezengec_controller" />
+                  respawn="false" output="screen" args="gezengec_controller joint_state_controller" />
       </group>
      
 </launch>
