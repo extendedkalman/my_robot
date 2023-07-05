@@ -6,6 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   geometry_msgs
+  sensor_msgs
 )
 
 find_package(Eigen3 REQUIRED)
@@ -17,6 +18,7 @@ catkin_package(
   CATKIN_DEPENDS
     std_msgs
     geometry_msgs
+    sensor_msgs
   DEPENDS Eigen3
 )
 
