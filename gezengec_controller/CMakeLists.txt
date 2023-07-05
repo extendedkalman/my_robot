@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   nav_msgs
   tf2
+  tf2_ros
 )
 
 find_package(Eigen3 REQUIRED)
@@ -23,6 +24,7 @@ catkin_package(
     sensor_msgs
     nav_msgs
     tf2
+    tf2_ros
   DEPENDS Eigen3
 )
 
