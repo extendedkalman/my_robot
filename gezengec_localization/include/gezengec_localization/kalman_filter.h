@@ -4,10 +4,10 @@
 #include <sensor_msgs/Imu.h>
 
 
-class KalmanFIilter
+class KalmanFilter
 {
 public:
-    KalmanFIilter(const ros::NodeHandle &);
+    KalmanFilter(const ros::NodeHandle &);
 
 private:
     ros::NodeHandle nh_;
