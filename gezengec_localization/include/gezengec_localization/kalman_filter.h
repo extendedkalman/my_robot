@@ -23,7 +23,11 @@ private:
     double motion_;
 
     nav_msgs::Odometry kalman_odom_;
+    double motion_variance_;
+    double measurement_variance_;
 
+    void measurement_update();
+    void state_prediction();
     void odomCallback(const nav_msgs::Odometry& odom_msg);
     void imuCallback(const sensor_msgs::Imu& imu_msg);
 
