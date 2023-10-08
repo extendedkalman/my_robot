@@ -21,7 +21,7 @@ NoisyController::NoisyController(const ros::NodeHandle &nh,
     
     prev_time_ = ros::Time::now();
 
-    joint_sub_ = nh_.subscribe("joint_states", 1000, &NoisyController::jointCallback, this);
+    joint_sub_ = nh_.subscribe("/joint_states", 1000, &NoisyController::jointCallback, this);
     odom_pub_ = nh_.advertise<nav_msgs::Odometry>("/odom_noisy", 10);
 
     odom_msg_.header.frame_id = "odom";

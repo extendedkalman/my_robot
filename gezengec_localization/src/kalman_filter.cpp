@@ -10,8 +10,8 @@ KalmanFilter::KalmanFilter(const ros::NodeHandle &nh):nh_{nh},
                 motion_variance_{4.0},
                 measurement_variance_{0.5}
 {
-    odom_sub_ = nh_.subscribe("gezengec_controller/odom_noisy", 1000, &KalmanFilter::odomCallback, this);
-    imu_sub_ = nh_.subscribe("imu", 1000, &KalmanFilter::imuCallback, this);
+    odom_sub_ = nh_.subscribe("/gezengec_controller/odom_noisy", 1000, &KalmanFilter::odomCallback, this);
+    imu_sub_ = nh_.subscribe("/imu", 1000, &KalmanFilter::imuCallback, this);
 
     odom_pub_ = nh_.advertise<nav_msgs::Odometry>("gezengec_controller/odom_kalman", 10);
 
